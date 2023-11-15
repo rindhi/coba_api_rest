@@ -1,0 +1,421 @@
+CRITICAL - 2023-03-10 14:31:37 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-03-10 14:32:01 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-03-10 14:32:03 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-03-10 14:34:11 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-03-10 14:34:13 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-03-10 21:37:34 --> Invalid file: "Books/listssss.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Books/listssss.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Books/listssss', [], true)
+ 3 APPPATH\Controllers\BookController.php(11): view('Books/listssss')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 21:38:02 --> Invalid file: "Books/listssss.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Books/listssss.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Books/listssss', [], true)
+ 3 APPPATH\Controllers\BookController.php(11): view('Books/listssss')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-10 23:32:17 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'library_demo_ci...', 3306, '', 0)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 23:32:17 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`
+ORDER BY `id` ASC', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-10 23:37:02 --> Error connecting to the database: mysqli_sql_exception: Access denied, this account is locked in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'library_demo_ci...', 3306, '', 0)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied, this account is locked in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 23:37:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied, this account is locked
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`
+ORDER BY `id` ASC', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-10 23:37:05 --> Error connecting to the database: mysqli_sql_exception: Access denied, this account is locked in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'library_demo_ci...', 3306, '', 0)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied, this account is locked in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 23:37:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied, this account is locked
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`
+ORDER BY `id` ASC', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-10 23:37:05 --> Error connecting to the database: mysqli_sql_exception: Access denied, this account is locked in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'library_demo_ci...', 3306, '', 0)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied, this account is locked in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 23:37:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied, this account is locked
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`
+ORDER BY `id` ASC', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-10 23:37:06 --> Error connecting to the database: mysqli_sql_exception: Access denied, this account is locked in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'library_demo_ci...', 3306, '', 0)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied, this account is locked in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 23:37:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied, this account is locked
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`
+ORDER BY `id` ASC', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-10 23:37:09 --> Error connecting to the database: mysqli_sql_exception: Access denied, this account is locked in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'library_demo_ci...', 3306, '', 0)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied, this account is locked in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 23:37:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied, this account is locked
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`
+ORDER BY `id` ASC', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-10 23:37:43 --> Error connecting to the database: mysqli_sql_exception: Access denied, this account is locked in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'library_demo_ci...', 3306, '', 0)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied, this account is locked in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 23:37:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied, this account is locked
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`
+ORDER BY `id` ASC', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-10 23:37:46 --> Error connecting to the database: mysqli_sql_exception: Access denied, this account is locked in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'library_demo_ci...', 3306, '', 0)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied, this account is locked in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 23:37:46 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied, this account is locked
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`
+ORDER BY `id` ASC', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-10 23:37:47 --> Error connecting to the database: mysqli_sql_exception: Access denied, this account is locked in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'library_demo_ci...', 3306, '', 0)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied, this account is locked in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 23:37:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied, this account is locked
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`
+ORDER BY `id` ASC', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

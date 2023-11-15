@@ -1,0 +1,53 @@
+ERROR - 2023-03-11 00:27:23 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'library_demo_ci4' in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'library_demo_ci...', 3306, '', 0)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'library_demo_ci4' in C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\app\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(934): App\Controllers\BookController->index()
+#7 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#8 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\API_REST_DEMO_CODEIGNITER\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-11 00:27:23 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'library_demo_ci4'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`
+ORDER BY `id` ASC', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\BookController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-11 00:31:31 --> Undefined variable $Book
+in APPPATH\Views\Books\list.php on line 13.
+ 1 APPPATH\Views\Books\list.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Book', 'APPPATH\\Views\\Books\\list.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Books\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Books/list', [], true)
+ 5 APPPATH\Controllers\BookController.php(14): view('Books/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

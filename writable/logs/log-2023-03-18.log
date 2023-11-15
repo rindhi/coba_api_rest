@@ -1,0 +1,56 @@
+CRITICAL - 2023-03-18 22:08:55 --> unlink(../public/uploads/1678813489_735595c756d0bf71fc8b.jpg): No such file or directory
+in APPPATH\Controllers\BookController.php on line 107.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/1678813489_735595c756d0bf71fc8b.jpg): No such file or directory', 'APPPATH\\Controllers\\BookController.php', 107)
+ 2 APPPATH\Controllers\BookController.php(107): unlink('../public/uploads/1678813489_735595c756d0bf71fc8b.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->updateBook()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 22:13:57 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\BookController.php(113): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\uploads', '1679177637_bc9145f3880b92d5f910')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->updateBook()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 22:15:00 --> unlink(../public/uploads/1678813537_5e97974540140cd2b0e7.jpg): No such file or directory
+in APPPATH\Controllers\BookController.php on line 107.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/1678813537_5e97974540140cd2b0e7.jpg): No such file or directory', 'APPPATH\\Controllers\\BookController.php', 107)
+ 2 APPPATH\Controllers\BookController.php(107): unlink('../public/uploads/1678813537_5e97974540140cd2b0e7.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->updateBook()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 22:24:48 --> unlink(../public/uploads/1678813489_735595c756d0bf71fc8b.jpg): No such file or directory
+in APPPATH\Controllers\BookController.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/1678813489_735595c756d0bf71fc8b.jpg): No such file or directory', 'APPPATH\\Controllers\\BookController.php', 73)
+ 2 APPPATH\Controllers\BookController.php(73): unlink('../public/uploads/1678813489_735595c756d0bf71fc8b.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->deleteBook('4')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 22:24:54 --> unlink(../public/uploads/1678813489_735595c756d0bf71fc8b.jpg): No such file or directory
+in APPPATH\Controllers\BookController.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/1678813489_735595c756d0bf71fc8b.jpg): No such file or directory', 'APPPATH\\Controllers\\BookController.php', 73)
+ 2 APPPATH\Controllers\BookController.php(73): unlink('../public/uploads/1678813489_735595c756d0bf71fc8b.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->deleteBook('4')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 22:25:00 --> unlink(../public/uploads/1678813537_5e97974540140cd2b0e7.jpg): No such file or directory
+in APPPATH\Controllers\BookController.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/1678813537_5e97974540140cd2b0e7.jpg): No such file or directory', 'APPPATH\\Controllers\\BookController.php', 73)
+ 2 APPPATH\Controllers\BookController.php(73): unlink('../public/uploads/1678813537_5e97974540140cd2b0e7.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->deleteBook('5')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 22:25:07 --> unlink(../public/uploads/1678813537_5e97974540140cd2b0e7.jpg): No such file or directory
+in APPPATH\Controllers\BookController.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/1678813537_5e97974540140cd2b0e7.jpg): No such file or directory', 'APPPATH\\Controllers\\BookController.php', 73)
+ 2 APPPATH\Controllers\BookController.php(73): unlink('../public/uploads/1678813537_5e97974540140cd2b0e7.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BookController->deleteBook('5')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
